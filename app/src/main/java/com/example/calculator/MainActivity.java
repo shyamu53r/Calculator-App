@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         button_clear = findViewById(R.id.clear_btn);
         textView_result = findViewById(R.id.result);
         editText_value = findViewById(R.id.enter_value);
+
         button_add.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
