@@ -35,46 +35,37 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 String str = editText_value.getText().toString();
                 textView_result.setText(""+addition(str));
-                setIntent(intent);
             }
         });
         button_sub.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 String str = editText_value.getText().toString();
                 textView_result.setText(""+subtraction(str));
-                setIntent(intent);
             }
         });
         button_mul.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 String str = editText_value.getText().toString();
                 textView_result.setText(""+multiplication(str));
-                setIntent(intent);
             }
         });
         button_div.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 String str = editText_value.getText().toString();
                 textView_result.setText(""+division(str));
-                setIntent(intent);
             }
         });
         button_clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 textView_result.setText(clear());
             }
         });
